@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: rgb(32, 35, 48) !important;
+}
+
+/* Titulo */
+#titulo {
+    display: flex;
+    justify-content: center;
+}
+
+#chloe {
+    animation: fill .5s ease forwards 3.5s;
+}
+
+#chloe path:nth-child(1) {
+    stroke-dasharray: 176;
+    stroke-dashoffset: 176;
+    animation: line-anim 3s ease forwards;
+}
+
+#chloe path:nth-child(2) {
+    stroke-dasharray: 185.60000610351562;
+    stroke-dashoffset: 185.60000610351562;
+    animation: line-anim 3s ease forwards;
+}
+
+#chloe path:nth-child(3) {
+    stroke-dasharray: 103.19999694824219;
+    stroke-dashoffset: 103.19999694824219;
+    animation: line-anim 3s ease forwards;
+}
+
+#chloe path:nth-child(4) {
+    stroke-dasharray: 196;
+    stroke-dashoffset: 196;
+    animation: line-anim 3s ease forwards;
+}
+
+#chloe path:nth-child(5) {
+    stroke-dasharray: 161.09999084472656;
+    stroke-dashoffset: 161.09999084472656;
+    animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: lightcoral;
+    }
+}
+
+/* Photo Grid */
+.grid {
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    height: fit-content;
+}
+
+.grid img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.theTabs button {
+    color: white;
+}
+
+.theTabs button:hover {
+    color: lightcoral;
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* separator */
+#separator {
+    height: 100px;
+    width: 100%;
+    /* background: red; */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: lighter;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: lightcoral;
+}
