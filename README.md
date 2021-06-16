@@ -1,2 +1,1 @@
-# Chloe
-Galería de fotos de mi mascota
+You can contact me at dario.r.guichon@outlook.com or dario.r.guichon@gmail.com
